@@ -22,7 +22,7 @@ def find_top_three(input):
   result = elfs_sorted[:3]
 
   return dict(
-    list = map(lambda x: dict(sum=x, position=elfs_summed.index(x)), result),
+    list = list(map(lambda x: dict(sum=x, position=elfs_summed.index(x)), result)),
     total = sum(result)
   )
 

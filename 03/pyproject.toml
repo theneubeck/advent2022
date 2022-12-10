@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "a03"
+version = "0.1.0"
+description = ""
+authors = ["Jens Carlén <jens.carlen@offerta.se>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^22.12.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+main = "a03:run"
