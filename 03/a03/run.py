@@ -1,4 +1,5 @@
 from a03.main import score_lines
+from a03.two import scores_badges_in_lines
 
 import os
 
@@ -8,5 +9,6 @@ def read_file(filename):
 
 def run():
   data = read_file("lines.txt")
-  print("first", score_lines(data))
+  print("first", score_lines(data)["sum"])
+  print("second", scores_badges_in_lines(data)["sum"])
 
