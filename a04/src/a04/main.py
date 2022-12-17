@@ -4,7 +4,18 @@ from typing import Tuple
 Result = namedtuple("Result", "total,pairs")
 
 
-def find_overlap(input: str) -> Result:
+def find_inclusion(input: str) -> Result:
+    rows = [line.split(",") for line in input.strip().split("\n") if line]
+    if not rows:
+        return Result(0, [])
+    result = []
+    for idx, row in enumerate(rows):
+        if is_contained_in(*row):
+            result.append(idx)
+    return Result(total=len(result), pairs=result)
+
+
+def find_overlaps(input: str) -> Result:
     rows = [line.split(",") for line in input.strip().split("\n") if line]
     if not rows:
         return Result(0, [])
@@ -19,6 +30,12 @@ Pair = namedtuple("Pair", "start, stop")
 
 
 def is_overlapping(one: str, two: str):
+    set1, set2 = parse(one, two)
+
+    return len(set1.intersection(set2)) > 0
+
+
+def is_contained_in(one: str, two: str):
     set1, set2 = parse(one, two)
 
     return len(set1.intersection(set2)) == len(set1) or len(set2.intersection(set1)) == len(set2)

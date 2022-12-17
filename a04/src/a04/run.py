@@ -1,8 +1,6 @@
 import os
 
-from a04.main import find_overlap
-
-# from a04.two import scores_badges_in_lines
+from a04.main import find_inclusion, find_overlaps
 
 
 def read_file(filename):
@@ -12,5 +10,7 @@ def read_file(filename):
 
 def run():
     data = read_file("lines.txt")
-    print("first", find_overlap(data))
-    # print("second", scores_badges_in_lines(data)["sum"])
+    print("first", find_inclusion(data))
+    print()
+    print("second", find_overlaps(data))
+    print()
