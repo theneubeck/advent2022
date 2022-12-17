@@ -1,5 +1,14 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python
-# Edit at https://www.toptal.com/developers/gitignore?templates=python
+# Created by https://www.toptal.com/developers/gitignore/api/dotnetcore,python
+# Edit at https://www.toptal.com/developers/gitignore?templates=dotnetcore,python
+
+### DotnetCore ###
+# .NET Core build folders
+bin/
+obj/
+
+# Common node modules locations
+/node_modules
+/wwwroot/node_modules
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -168,4 +177,4 @@ cython_debug/
 poetry.toml
 
 
-# End of https://www.toptal.com/developers/gitignore/api/python
+# End of https://www.toptal.com/developers/gitignore/api/dotnetcore,python
