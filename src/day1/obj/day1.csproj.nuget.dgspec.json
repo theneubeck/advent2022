@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jens/code/my_apps/advent2022/src/day1/day1.csproj": {}
+    "/Users/jenscarlen/code/my-apps/advent-of-code/src/Day1/Day1.csproj": {}
   },
   "projects": {
-    "/Users/jens/code/my_apps/advent2022/src/day1/day1.csproj": {
+    "/Users/jenscarlen/code/my-apps/advent-of-code/src/Day1/Day1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jens/code/my_apps/advent2022/src/day1/day1.csproj",
-        "projectName": "day1",
-        "projectPath": "/Users/jens/code/my_apps/advent2022/src/day1/day1.csproj",
-        "packagesPath": "/Users/jens/.nuget/packages/",
-        "outputPath": "/Users/jens/code/my_apps/advent2022/src/day1/obj/",
+        "projectUniqueName": "/Users/jenscarlen/code/my-apps/advent-of-code/src/Day1/Day1.csproj",
+        "projectName": "Day1",
+        "projectPath": "/Users/jenscarlen/code/my-apps/advent-of-code/src/Day1/Day1.csproj",
+        "packagesPath": "/Users/jenscarlen/.nuget/packages/",
+        "outputPath": "/Users/jenscarlen/code/my-apps/advent-of-code/src/Day1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/jens/.nuget/NuGet/NuGet.Config"
+          "/Users/jenscarlen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/offerta/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -53,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

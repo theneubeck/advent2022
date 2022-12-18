@@ -1,8 +1,8 @@
 using Xunit;
 using FluentAssertions;
-using day1.lib;
+using Day1.Lib;
 
-namespace day1.tests;
+namespace Day1.Tests;
 
 public class FindHeaviestTest
 {

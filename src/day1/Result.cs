@@ -1,4 +1,4 @@
-namespace day1.lib
+namespace Day1.Lib
 {
     public class Result
     {

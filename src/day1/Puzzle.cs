@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Numerics;
 
-namespace day1.lib;
+namespace Day1.Lib;
 
 public class Puzzle
 {
