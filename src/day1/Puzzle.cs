@@ -32,6 +32,28 @@ public class Puzzle
         }
         return groups;
     }
+
+    public static ListResult FindTopThree(string input)
+    {
+        var rows = input.Trim().Split("\n");
+        var groups = CollectGroups(rows);
+        var sorted = groups
+            .Select((g, i) => new {Index = i, Total = g.Sum()})
+            .OrderBy((g) => -g.Total).Take(3).ToList();
+
+
+        return new ListResult
+        {
+            Total = sorted.Sum((g) => g.Total),
+            List = sorted.Select((g) =>
+                new Result()
+                {
+                    Position = g.Index,
+                    Total = g.Total
+                }
+            ).ToList()
+        };
+    }
 }
 
 internal class ElfGroup
