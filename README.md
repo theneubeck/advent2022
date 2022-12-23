@@ -18,10 +18,10 @@ poetry run pytest
 ```bash
 dotnet new sln
 cd src
-dotnet new console -o day1
-dotnet sln add src/day1/day1.csproj
-dotnet new xunit -o tests/day1.tests
-dotnet add tests/day1.tests/day1.tests.csproj reference src/day1/day1.csproj
-dotnet sln add tests/day1.tests/day1.tests.csproj
+dotnet new console -o src/Day1
+dotnet sln add src/Day1/Day1.csproj
+dotnet new xunit -o tests/Day1.Tests
+dotnet add tests/Day1.Tests/Day1.Tests.csproj reference src/Day1/Day1.csproj
+dotnet sln add tests/Day1.Tests/Day1.Tests.csproj
 
 ```
